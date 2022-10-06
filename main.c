@@ -1,10 +1,11 @@
 #include "monty.h"
+bus_t bus = {NULL, NULL, NULL, 0};
 /**
- * main - monty code interpreter
- * @argc: number of arguments
- * @argv: monty file location
- * Return: 0 on success
- */
+* main - monty code interpreter
+* @argc: number of arguments
+* @argv: monty file location
+* Return: 0 on success
+*/
 int main(int argc, char *argv[])
 {
 	char *content;
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	file = fopen(argv[1], "r")
+	file = fopen(argv[1], "r");
 	bus.file = file;
 	if (!file)
 	{
