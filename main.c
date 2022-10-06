@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
-	file = fopen(argv[1], "r");
+	file = fopen(argv[1], "r")
 	bus.file = file;
 	if (!file)
 	{

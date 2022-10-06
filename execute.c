@@ -26,7 +26,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		{"queue", f_queue},
 		{"stack", f_stack},
 		{NULL, NULL}
-	        };
+		};
 	unsigned int i = 0;
 	char *op;
 
@@ -50,4 +50,3 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		exit(EXIT_FAILURE); }
 	return (1);
 }
-
